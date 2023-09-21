@@ -1,1 +1,1 @@
-# Cathalstudent.github.io
+# Cathal.github.io
