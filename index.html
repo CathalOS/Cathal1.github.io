@@ -1,0 +1,98 @@
+<head>
+    <title>Cathal O'Shea | Tech Strategist & MBA Graduate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cathal O'Shea - MBA Graduate specialized in business operations, project management, and strategic analyst roles in the tech industry.">
+    <link href="https://unpkg.com/tailwindcss@3.0.24/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-padding {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #profile-image {
+            background-image: url('https://images.unsplash.com/photo-1563132337-f159f484226c');
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+            width: 150px;
+            border-radius: 9999px;
+            margin: auto;
+        }
+
+        .featured-case-study {
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .bg-linkedin {
+            background-color: #0077B5;
+        }
+
+        .demo-video-placeholder {
+            background: #ddd;
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .demo-video-placeholder::before {
+            content: 'Video Demo Placeholder';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+            font-size: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- ...rest of the body before My Work section... -->
+
+    <!-- My Work Section - GenAI Website Builders -->
+    <section id="my-work" class="section-padding">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-semibold text-gray-800">My Work</h2>
+                <p class="mt-3 text-gray-600">Primary focus on developing innovative tech solutions in the startup ecosystem.</p>
+            </div>
+            
+            <!-- Primary focus: GenAI Website Builders -->
+            <div class="mb-12">
+                <h3 class="text-2xl text-gray-800 font-semibold mb-3">GenAI Website Builders</h3>
+                <p class="text-gray-600">Pioneering the automation of web development process through AI technology to expedite website creation for startups.</p>
+                <div class="video-container mt-6 demo-video-placeholder">
+                    <!-- Placeholder for video demo -->
+                </div>
+            </div>
+
+            <!-- Case Studies Section embedded into the main body -->
+            <div class="mt-10">
+                <h2 class="text-2xl font-semibold text-gray-800">Case Studies</h2>
+                <p class="mt-3 text-gray-600">A glimpse into my successful projects.</p>
+                <div class="flex flex-wrap -mx-3 mt-6">
+                    <!-- Case studies as per the previous snippet -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... rest of the body after My Work section... -->
+    
+    <!-- Footer -->
+    <footer class="bg-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-600 text-sm">  2023 Cathal O'Shea. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript for mobile menu -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    
+</body>
