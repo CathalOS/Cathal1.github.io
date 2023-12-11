@@ -1,98 +1,70 @@
+<html lang="en">
 <head>
-    <title>Cathal O'Shea | Tech Strategist & MBA Graduate</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cathal O'Shea - MBA Graduate specialized in business operations, project management, and strategic analyst roles in the tech industry.">
-    <link href="https://unpkg.com/tailwindcss@3.0.24/dist/tailwind.min.css" rel="stylesheet">
+    <title>Cathal O'Shea | LBS MBA Tech Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'regal-blue': '#243c5a',
+              },
+            },
+          },
+        }
+    </script>
     <style>
-        .section-padding {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+        body { 
+            font-family: 'Nunito', sans-serif;
         }
-
-        #profile-image {
-            background-image: url('https://images.unsplash.com/photo-1563132337-f159f484226c');
-            background-size: cover;
-            background-position: center;
-            height: 150px;
-            width: 150px;
-            border-radius: 9999px;
-            margin: auto;
+        .btn-waitlist {
+            transition: background-color 0.2s;
         }
-
-        .featured-case-study {
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .bg-linkedin {
-            background-color: #0077B5;
-        }
-
-        .demo-video-placeholder {
-            background: #ddd;
-            position: relative;
-            overflow: hidden;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-        }
-
-        .demo-video-placeholder::before {
-            content: 'Video Demo Placeholder';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #333;
-            font-size: 1rem;
-            text-align: center;
+        .btn-waitlist:hover {
+            background-color: #2b6cb0;
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <!-- ...rest of the body before My Work section... -->
+<body class="bg-gray-100">
 
-    <!-- My Work Section - GenAI Website Builders -->
-    <section id="my-work" class="section-padding">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-semibold text-gray-800">My Work</h2>
-                <p class="mt-3 text-gray-600">Primary focus on developing innovative tech solutions in the startup ecosystem.</p>
-            </div>
-            
-            <!-- Primary focus: GenAI Website Builders -->
-            <div class="mb-12">
-                <h3 class="text-2xl text-gray-800 font-semibold mb-3">GenAI Website Builders</h3>
-                <p class="text-gray-600">Pioneering the automation of web development process through AI technology to expedite website creation for startups.</p>
-                <div class="video-container mt-6 demo-video-placeholder">
-                    <!-- Placeholder for video demo -->
-                </div>
-            </div>
+    <div class="min-h-screen flex flex-col">
+        <div class="flex-1 container mx-auto p-8">
+            <header class="flex justify-between items-center py-6">
+                <h1 class="text-2xl font-bold text-regal-blue">Cathal O'Shea</h1>
+                <a href="https://www.linkedin.com/in/cathal-o-shea" class="text-indigo-600" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </header>
 
-            <!-- Case Studies Section embedded into the main body -->
-            <div class="mt-10">
-                <h2 class="text-2xl font-semibold text-gray-800">Case Studies</h2>
-                <p class="mt-3 text-gray-600">A glimpse into my successful projects.</p>
-                <div class="flex flex-wrap -mx-3 mt-6">
-                    <!-- Case studies as per the previous snippet -->
-                </div>
-            </div>
+            <main class="mt-4">
+                <section class="text-center mb-20">
+                    <h2 class="text-5xl font-extrabold text-regal-blue mb-4">Building the Future with Tech</h2>
+                    <p class="text-xl">LBS MBA Grad with a focus on leveraging technology to create meaningful solutions.</p>
+                </section>
+                <section id="projects" class="mb-12">
+                    <h3 class="text-3xl font-bold text-gray-700 mb-8">Projects</h3>
+                    <div class="bg-white rounded-lg shadow-xl p-8">
+                        <h4 class="text-2xl font-bold text-gray-800 mb-3">Generative AI Website Builder</h4>
+                        <p class="text-gray-600 mb-4">A tool to create websites with natural language - see demo below of how this site was built.</p>
+						<div class="flex justify-center items-center bg-gray-200 mb-4">
+							<video controls style="width:100%; max-width:100%; height:auto;">
+								<source src="personal_website_demo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+                        <p class="text-gray-600 mb-4">Exciting updates will be shared soon! Join the waitlist to stay informed:</p>
+                        <a href="https://1l6z0j22s5u.typeform.com/to/HxRSYWBy" class="btn-waitlist text-white bg-indigo-700 hover:bg-indigo-800 font-bold py-2 px-4 rounded inline-block" target="_blank" rel="noopener noreferrer">
+							Join the Waitlist
+						</a>
+                    </div>
+                </section>
+            </main>
         </div>
-    </section>
 
-    <!-- ... rest of the body after My Work section... -->
-    
-    <!-- Footer -->
-    <footer class="bg-white py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-600 text-sm">  2023 Cathal O'Shea. All rights reserved.</p>
-        </div>
-    </footer>
-    
-    <!-- JavaScript for mobile menu -->
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
-    
+        <footer class="bg-regal-blue text-center">
+            <p class="text-gray-200 py-4">&copy; 2023 Cathal O'Shea. All Rights Reserved.</p>
+        </footer>
+    </div>
+
 </body>
+</html>
