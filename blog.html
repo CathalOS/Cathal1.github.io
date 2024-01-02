@@ -21,70 +21,25 @@
             font-family: 'Inter', sans-serif;
             background-color: #fff;
         }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            flex-wrap: nowrap;
-          }
-          
-          nav a {
-            flex-grow: 0;
-            flex-shrink: 1;
+        nav a {
+            flex-grow: 1;
             text-align: center;
-            white-space: nowrap;
-            padding: 0 10px; /* Adjust as needed */
-          }
-          
+            font-size: 15px;
+        }
           @media (max-width: 768px) {
             nav {
               justify-content: center;
             }
           
             nav a {
-              font-size: 4vw; /* Adjust font size based on viewport width */
-              padding: 0 5px; /* Less padding on smaller screens */
+              padding: 2px; /* Less padding on smaller screens */
             }
           
             /* For very small screens, consider switching to a hamburger menu */
             .hamburger-menu {
               display: none;
             }
-          
-            @media (max-width: 480px) {
-              .hamburger-menu {
-                display: block;
-              }
-          
-              nav a {
-                display: none; /* Hide regular nav items */
-              }
-            }
           }
-        .profile-image {
-            background-image: url('https://media.licdn.com/dms/image/C4E03AQGvTglKk4_NJw/profile-displayphoto-shrink_800_800/0/1633516393011?e=1709164800&v=beta&t=T2d3C3a-yZmbmicELMte1oChAPIa5DolAt1rayg4GJM');
-            background-color: #e2e8f0;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .waitlist-btn, .see-more-link {
-            background-color: #000;
-            color: #fff;
-            padding: 10px 15px;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: 500;
-            transition: background-color 0.3s ease-in-out;
-            margin-top: 8px;
-        }
-        .waitlist-btn:hover, .see-more-link:hover {
-            background-color: #333;
-        }
         .nav-link {
             text-decoration: none;
             color: #333;
