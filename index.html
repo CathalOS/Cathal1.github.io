@@ -20,10 +20,12 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        nav a {
-            flex-grow: 1;
-            text-align: center;
-            font-size: 16px;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: nowrap; /* Adjust based on your design choice */
+            /* overflow-x: auto; Removed to avoid scrollbar */
         }
           @media (max-width: 768px) {
             nav {
