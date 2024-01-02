@@ -1,0 +1,128 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathal O'Shea | Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff;
+        }
+        .profile-image {
+            background-image: url('https://media.licdn.com/dms/image/C4E03AQGvTglKk4_NJw/profile-displayphoto-shrink_800_800/0/1633516393011?e=1709164800&v=beta&t=T2d3C3a-yZmbmicELMte1oChAPIa5DolAt1rayg4GJM');
+            background-color: #e2e8f0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .waitlist-btn, .see-more-link {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 500;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 8px;
+        }
+        .waitlist-btn:hover, .see-more-link:hover {
+            background-color: #333;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #000;
+        }
+        .blog-post {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin: 2em 0;
+            padding: 1em;
+        }
+        .blog-post h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .blog-post p {
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 0.5em;
+        }
+        .blog-post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5em;
+            margin: 1em 0;
+        }
+        .blog-post .quote {
+            text-align: center;
+            font-style: italic;
+            margin: 2em 0;
+            font-size: 1.25rem;
+        }
+        .blog-post .author {
+            display: block;
+            text-align: center;
+            margin: -1.25em 0 2em 0;
+            font-style: normal;
+            font-weight: bold;
+        }
+        .blog-post .date {
+            text-align: right;
+            margin-top: -2em;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <header class="container mx-auto px-4 py-5 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Cathal O'Shea</h1>
+        <nav>
+            <a href="./projects" class="nav-link">Projects</a>
+            <a href="./blog" class="nav-link">Blog</a>
+            <a href="https://www.linkedin.com/in/cathal-o-shea/" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 py-5">
+        <section>
+            <h2 class="text-2xl font-semibold mb-6">Blog</h2>
+            <article class="blog-post">
+                <h2>Reflections on the Silicon Valley MBA World Summit</h2>
+                <p class="date">Jan 2, 2024</p>
+                <p class="quote">"There comes a time in every life where the past recedes and the future opens. It's that moment when you turn to face the unknown. Some will turn back to what they already know. Some will walk straight ahead into uncertainty. I can't tell you which one is right. But I can tell you which one is more fun."</p>
+                <span class="author">- Phil Knight, MBA</span>
+                <p>The MBA World Summit was a really enjoyable way to visit Silicon Valley. It was great to learn from sessions from MBAs from around the world, learning about new technologies and the different ways things are done in different places. Sessions ranged from exploring SME challenges to interactive discussions about leveraging tools like Chat-GPT. Each speaker was able to bring their specific experience to the topic they were discussing. And speaking to local MBAs was helpful to get a sense of what ideas people are focusing on in the Bay Area.</p>
+                <img src="Speaking at MBA World Summit.jpg" alt="Speaking at MBA World Summit" style="max-width:50%; width:auto; height: auto; display: block; margin: auto; margin-bottom: 20px;">
+                <p>I also had the opportunity to speak at one of the summit's laboratory sessions. My talk was about how valuable ideas can be found everywhere. That theme, of useful ideas coming from a variety of different places, was clear from the sessions I attended during the summit as people brought new solutions which they had seen be effective in different markets and regions. One common thread that ran through the various talks given was the role of tech as an enabler. In my session, I discussed how technology has not only connected us but has also allowed us to work in ways that were unimaginable just a few years ago. In my talk, I included a quote about the internet by Robert Taylor (who brought together many great teams in Silicon Valley) – "The Internet is not about technology; it's about communication. The Internet connects people who have shared interests, ideas, and needs, regardless of geography". This Robert Taylor quote exemplified the point of my talk, that tech can help bring people together, help groups of people find good ideas and act on these good ideas too.</p>
+                <img src="Ideaflow.jpg" alt="Ideaflow" style="max-width:50%; width:auto; height: auto; display: block; margin: auto; margin-bottom: 20px;">
+                <p>I picked up a copy of Ideaflow on the trip, a book written by Jeremy Utley and Perry Klebahn (two authors from Stanford's d.school). The book really builds on how ideas can be generated by a team and why idea generation is important. There’s many actionable methods within the book, both for how your team can generate more ideas and act on ideas effectively. I’d recommend it as an excellent resource for anyone interested in fostering creativity and innovation.</p>
+                <p>Reflecting on the summit months later, I am grateful for the learnings and connections it has provided for the year ahead. I had a really good experience, thanks to the speakers and other attendees making the event so worthwhile!</p>
+            </article>
+    </main>
+    <footer class="bg-gray-100 p-4 mt-16 rounded-lg text-center">
+        <p>&copy; 2023 Cathal O'Shea. All rights reserved.</p>
+    </footer>
+</body>
+</html>
