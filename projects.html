@@ -25,8 +25,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            flex-wrap: nowrap; /* Adjust based on your design choice */
-            /* overflow-x: auto; Removed to avoid scrollbar */
+            flex-wrap: nowrap;
         }
           @media (max-width: 768px) {
             nav {
@@ -50,7 +49,7 @@
         .nav-link {
             text-decoration: none;
             color: #333;
-            padding: 8px 12px;
+            padding: 5px 5px;;
             transition: color 0.3s;
         }
         .nav-link:hover {
@@ -92,8 +91,10 @@
     </style>
 </head>
 <body>
-    <header class="container mx-auto px-4 py-5 flex justify-between items-center">
-        <h1 class="text-3xl font-bold">Cathal O'Shea</h1>
+    <header class="container mx-auto px-4 py-5 flex justify-between items-start">
+        <a href="./index">
+            <h1 class="text-3xl font-bold">Cathal O'Shea</h1>
+        </a>
         <nav>
             <a href="./projects" class="nav-link">Projects</a>
             <a href="./blog" class="nav-link">Blog</a>
